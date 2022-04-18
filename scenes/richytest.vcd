@@ -1,0 +1,47 @@
+// Choreo version 1
+actor "bob"
+{
+  channel "ch1"
+  {
+    event speak "barn.chatter"
+    {
+      time 0.180000 2.757347
+      param "barn.chatter"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "dance"
+  {
+    event gesture "g_fist"
+    {
+      time 0.253333 2.553333
+      param "g_fist"
+      absolutetags playback_time
+      {
+        "apex" 0.176471
+        "accent" 0.250000
+        "loop" 0.441176
+        "end" 0.588235
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.176471
+        "accent" 0.250000
+        "loop" 0.441176
+        "end" 0.588235
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

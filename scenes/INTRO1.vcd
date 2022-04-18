@@ -1,0 +1,203 @@
+// Choreo version 1
+actor "AUS"
+{
+  channel "talk"
+  {
+    event speak "aus"
+    {
+      time 0.413333 24.791996
+      param "intro1aus.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "move"
+  {
+    event gesture "g_openarms"
+    {
+      time 0.800000 3.166667
+      param "g_openarms"
+      absolutetags playback_time
+      {
+        "apex" 0.142857
+        "accent" 0.300000
+        "loop" 0.714286
+        "end" 0.742857
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.142857
+        "accent" 0.300000
+        "loop" 0.714286
+        "end" 0.742857
+      }
+    }
+    event gesture "G_shrug"
+    {
+      time 8.600000 11.500002
+      param "G_shrug"
+      absolutetags playback_time
+      {
+        "apex" 0.344828
+        "accent" 0.554483
+        "loop" 0.601379
+        "end" 0.671724
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.160000
+        "accent" 0.240000
+        "loop" 0.320000
+        "end" 0.440000
+      }
+      sequenceduration 1.700000
+    }
+    event gesture "g_salute"
+    {
+      time 22.733334 25.366667
+      param "g_salute"
+      absolutetags playback_time
+      {
+        "apex" 0.256410
+        "accent" 0.641026
+        "loop" 0.666667
+        "end" 0.833333
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.256410
+        "accent" 0.641026
+        "loop" 0.666667
+        "end" 0.833333
+      }
+    }
+  }
+  channel "face"
+  {
+    event flexanimation "disagree"
+    {
+      time 8.200000 11.533335
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.7253 0.0000
+          3.2920 0.0000
+        }
+        {
+          0.7253 0.5000
+          3.2920 0.5000
+        }
+        "lid_tightener" combo 
+        {
+          0.7253 0.0000
+          3.2920 0.5800
+        }
+        {
+          0.7253 0.5000
+          3.2920 0.5000
+        }
+        "lid_droop" combo 
+        {
+          3.2920 0.0000
+        }
+        {
+          3.2920 0.5000
+        }
+        "lid_closer" combo 
+        {
+          3.2920 0.0000
+        }
+        {
+          3.2920 0.5000
+        }
+        "half_closed" 
+        {
+          3.2920 0.0000
+        }
+        "inner_raiser" combo 
+        {
+          3.2920 0.0000
+        }
+        {
+          3.2920 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          3.2920 0.0000
+        }
+        {
+          3.2920 0.5000
+        }
+        "lowerer" combo 
+        {
+          3.2920 1.0000
+        }
+        {
+          3.2920 0.5000
+        }
+        "wrinkler" 
+        {
+          3.2920 0.8900
+        }
+        "jaw_clencher" 
+        {
+          3.2920 1.0000
+        }
+        "lower_lip" 
+        {
+          3.2920 0.0000
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          3.2920 0.2700
+        }
+      }
+    }
+  }
+  channel "talk"
+  {
+  }
+  channel "sit"
+  {
+  }
+  faceposermodel "models\humans\group03\male_05.mdl"
+}
+
+actor "SCO"
+{
+  channel "talk"
+  {
+    event speak "INTRO1SCO.wav"
+    {
+      time 1.066667 21.097393
+      param "INTRO1SCO.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "sit"
+  {
+    event sequence "silo_sit"
+    {
+      time -0.047619 25.357141
+      param "silo_sit"
+    }
+  }
+  faceposermodel "models\humans\group03\male_06.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "28"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,137 @@
+// Choreo version 1
+actor "ENG"
+{
+  channel "talk"
+  {
+    event speak "INTRO2ENG.WAV"
+    {
+      time 0.361111 7.551202
+      param "INTRO2ENG.WAV"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "pso"
+  {
+    event sequence "idle_angry"
+    {
+      time 0.000001 16.111111
+      param "idle_angry"
+    }
+  }
+  channel "emo"
+  {
+    event flexanimation "flex"
+    {
+      time -0.000000 15.027778
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          1.6267 0.0000
+          14.0434 0.0000
+        }
+        {
+          1.6267 0.5000
+          14.0434 0.5000
+        }
+        "lid_tightener" combo 
+        {
+          1.6267 1.0000
+          14.0434 0.0650
+        }
+        {
+          1.6267 0.5000
+          14.0434 0.5000
+        }
+        "lid_droop" combo 
+        {
+          1.6267 0.0000
+          14.0434 0.0000
+        }
+        {
+          1.6267 0.5000
+          14.0434 0.5000
+        }
+        "inner_raiser" combo 
+        {
+          1.6267 0.0000
+          14.0434 0.0000
+        }
+        {
+          1.6267 0.5000
+          14.0434 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          1.6267 1.0000
+          14.0434 1.0000
+        }
+        {
+          1.6267 0.5000
+          14.0434 0.5000
+        }
+        "lowerer" combo 
+        {
+          1.6267 1.0000
+          14.0434 1.0000
+        }
+        {
+          1.6267 0.5000
+          14.0434 0.5000
+        }
+        "wrinkler" 
+        {
+          1.6267 1.0000
+          14.0434 1.0000
+        }
+      }
+    }
+  }
+  channel "LOOK"
+  {
+    event lookat "DSDS"
+    {
+      time -0.138889 16.138889
+      param "SCO"
+    }
+  }
+  channel "cum"
+  {
+    event gesture "G_righthandpoint"
+    {
+      time 3.583333 7.883333
+      param "G_righthandpoint"
+      absolutetags playback_time
+      {
+        "apex" 0.110123
+        "accent" 0.235978
+        "loop" 0.251710
+        "end" 0.361833
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.205882
+        "accent" 0.441176
+        "loop" 0.470588
+        "end" 0.676471
+      }
+      sequenceduration 2.300000
+    }
+  }
+  faceposermodel "models\humans\group03m\male_09.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "24"
+  "SceneRampTool" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

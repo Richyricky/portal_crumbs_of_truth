@@ -1,0 +1,90 @@
+// Choreo version 1
+actor "ENG2"
+{
+  channel "speak"
+  {
+    event speak "drink.wav"
+    {
+      time 0.106667 6.834037
+      param "drink.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "G_lookatthis"
+    {
+      time -0.013333 1.286667
+      param "G_lookatthis"
+      absolutetags playback_time
+      {
+        "apex" 0.184211
+        "accent" 0.421053
+        "loop" 0.463684
+        "end" 0.473684
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.184211
+        "accent" 0.421053
+        "loop" 0.473684
+        "end" 0.473684
+      }
+    }
+    event gesture "G_puncuate"
+    {
+      time 1.360000 4.246667
+      param "G_puncuate"
+      absolutetags playback_time
+      {
+        "apex" 0.219977
+        "accent" 0.314280
+        "loop" 0.396796
+        "end" 0.491099
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.250000
+        "accent" 0.416667
+        "loop" 0.562500
+        "end" 0.729167
+      }
+      sequenceduration 1.633333
+    }
+    event gesture "hg_nod_yes"
+    {
+      time 4.400000 6.700000
+      param "hg_nod_yes"
+      absolutetags playback_time
+      {
+        "apex" 0.058824
+        "extreme" 0.161765
+        "loop" 0.411765
+        "end" 0.764706
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.058824
+        "extreme" 0.161765
+        "loop" 0.411765
+        "end" 0.764706
+      }
+      sequenceduration 2.300000
+    }
+  }
+  faceposermodel "models\humans\group03\male_06.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

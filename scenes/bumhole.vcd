@@ -1,0 +1,36 @@
+// Choreo version 1
+actor "bob"
+{
+  channel "talk"
+  {
+    event speak "s"
+    {
+      time 0.146667 3.594830
+      param "bumhole.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "action"
+  {
+    event sequence "gesture_turn_left_90"
+    {
+      time 0.406667 1.340000
+      param "gesture_turn_left_90"
+      fixedlength
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off
