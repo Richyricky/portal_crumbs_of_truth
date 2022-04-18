@@ -1,0 +1,24 @@
+// Choreo version 1
+actor "Aperture_AI"
+{
+  channel "speak"
+  {
+    event speak "dialogue\game_line_test1_entry.wav"
+    {
+      time 0.240000 20.601610
+      param "dialogue\game_line_test1_entry.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off
