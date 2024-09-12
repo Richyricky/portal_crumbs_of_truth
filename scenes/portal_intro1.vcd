@@ -1,0 +1,59 @@
+// Choreo version 1
+actor "worker"
+{
+  channel "speak"
+  {
+    event speak "dialogue\line1.wav"
+    {
+      time 0.254386 10.204137
+      param "dialogue\line1.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "dialogue\line2.wav"
+    {
+      time 10.427084 18.670780
+      param "dialogue\line2.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "dialogue\line3.wav"
+    {
+      time 18.958334 28.334003
+      param "dialogue\line3.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "dialogue\line4.wav"
+    {
+      time 29.229168 33.431980
+      param "dialogue\line4.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "dialogue\line5.wav"
+    {
+      time 34.458332 44.902119
+      param "dialogue\line5.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "16"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

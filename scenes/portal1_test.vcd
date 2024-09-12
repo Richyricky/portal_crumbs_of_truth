@@ -1,0 +1,71 @@
+// Choreo version 1
+actor "drevil"
+{
+  channel "speak1"
+  {
+    event speak "dialogue\show_on_the_road.wav"
+    {
+      time 0.106667 2.298662
+      param "dialogue\show_on_the_road.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "channel3"
+  {
+    event flexanimation "flex1"
+    {
+      time 0.936667 2.216667
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "blink" 
+        {
+          0.5133 1.0000
+          0.5133 1.0000
+        }
+        "wrinkler" 
+        {
+          0.5133 0.0000
+          0.5133 0.0000
+        }
+      }
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "gestur1"
+    {
+      time 0.153333 2.120000
+      param "G_righthandmotion"
+      absolutetags playback_time
+      {
+        "apex" 0.241379
+        "accent" 0.517241
+        "loop" 0.689655
+        "end" 0.775862
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.241379
+        "accent" 0.517241
+        "loop" 0.689655
+        "end" 0.775862
+      }
+      sequenceduration 1.966667
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "120"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

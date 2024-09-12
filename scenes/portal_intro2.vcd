@@ -1,0 +1,147 @@
+// Choreo version 1
+actor "drevil"
+{
+  channel "speak"
+  {
+    event speak "dialogue\line1.wav"
+    {
+      time 0.240000 10.189751
+      param "dialogue\line1.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "G_lookatthis"
+    {
+      time 2.880000 4.500000
+      param "G_lookatthis"
+      absolutetags playback_time
+      {
+        "apex" 0.147823
+        "accent" 0.337882
+        "end" 0.440329
+        "loop" 0.905350
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.184211
+        "accent" 0.421053
+        "loop" 0.473684
+        "end" 0.473684
+      }
+      sequenceduration 1.300000
+    }
+    event gesture "G_puncuate"
+    {
+      time 0.160000 1.793333
+      param "G_puncuate"
+      absolutetags playback_time
+      {
+        "apex" 0.250000
+        "accent" 0.416667
+        "loop" 0.562500
+        "end" 0.729167
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.250000
+        "accent" 0.416667
+        "loop" 0.562500
+        "end" 0.729167
+      }
+    }
+    event gesture "bg_up_r"
+    {
+      time 5.606667 7.206667
+      param "bg_up_r"
+      absolutetags playback_time
+      {
+        "apex" 0.085106
+        "extreme" 0.276596
+        "loop" 0.425532
+        "end" 0.638298
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.085106
+        "extreme" 0.276596
+        "loop" 0.425532
+        "end" 0.638298
+      }
+    }
+  }
+  channel "expression"
+  {
+    event flexanimation "flex_1"
+    {
+      time 0.020000 10.206667
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          2.1183 1.0000
+          2.2300 0.6500
+          4.7140 0.0000
+          4.7140 0.5600
+          5.2340 1.0000
+          5.6607 0.4900
+        }
+        {
+          2.1183 0.5000
+          2.2300 0.5000
+          4.7140 0.5000
+          4.7140 0.5000
+          5.2340 0.5000
+          5.6607 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          5.2340 1.0000
+          5.6607 0.0000
+        }
+        {
+          5.2340 0.5000
+          5.6607 0.5000
+        }
+        "smile" 
+        {
+          2.1183 0.6411
+          2.2300 0.6400
+          4.7140 0.4602
+          4.7140 0.0001
+          5.2340 0.0001
+          5.6607 0.0001
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          4.7140 0.5000
+          5.2340 0.5000
+          5.6607 0.5000
+        }
+        "chest_rightleft" range 30.0 -30.0 
+        {
+          4.7140 0.5000
+          4.7140 0.5000
+          5.2340 0.5000
+          5.6607 0.5000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off
